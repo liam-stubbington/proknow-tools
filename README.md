@@ -5,6 +5,20 @@ This project contains a set of script object templates that extend the core capa
 Author: Liam Stubbington, RT Physicist 
 <br>Cambridge University Hospitals NHS Foundation Trust 
 
+**Dependencies**
+- certifi==2022.12.7
+- charset-normalizer==3.0.1
+- futures==3.0.5
+- idna==3.4
+- proknow==0.19.0
+- requests==2.28.2
+- six==1.16.0
+- tabulate==0.9.0
+- urllib3==1.26.14
+- progress==1.6
+
+And Python 3.8! 
+
 ---
 ## Quick Start 
 
