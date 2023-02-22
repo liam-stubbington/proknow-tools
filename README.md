@@ -49,6 +49,8 @@ This will add the following CMs across all entities for all patients listed in t
 8. *NHS - Prescriptions (Gy), plan
 9. *NHS - Approx. age at imaging (years), image_set
 
+DICOM is misleading. None of these are taken from DICOM. All of these CMs are added from the ProKnow UI. 
+
 Approximate age at imaging is due to dividing the difference in days by 365.24.
 
 MeanBeamEnergy is better for scanned proton beams which have a spread in energies.
@@ -80,7 +82,8 @@ Following on from the above, we want to assign custom metric values to specific 
 
 ```
     my_thing = NHSCustomMetricsFromCSV(
-        csv_path = "./custom_metrics/custom_metrics.csv"
+        csv_path = "./custom_metrics/custom_metrics.csv",
+        **kwargs
     )
 
     my_thing.add_cms_from_csv()
