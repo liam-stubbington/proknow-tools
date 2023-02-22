@@ -292,10 +292,3 @@ Attributes:
     - error_message
 
 ---
-### Notes 
-Context:  [patient, study, image_set, structure_set, plan, dose]
-Types: [number, string, enum]
-
-Study and Patient are the difficult ones. 
-patient_item.studies returns a list of StudySummary items. 
-Everything is read-only - do Studies have metadata? 
